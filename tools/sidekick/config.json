@@ -46,6 +46,12 @@
         "title": "FaaS Configurator",
         "description": "Deprecated.",
         "url": "https://milo.adobe.com/tools/faas"
+      },
+      {
+        "title": "Advanced Search",
+        "description": "Milo Studio Advanced Search with shell context",
+        "image": "./media_1eb4dd35d7ca41a52d86a5f8424e19642111386a4.jpeg?width=750&format=jpeg&optimize=medium",
+        "url": "https://da.live/app/adobecom/da-bacom/tools/milostudio-search/search" 
       }
     ]
 }
