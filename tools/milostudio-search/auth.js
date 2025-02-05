@@ -1,6 +1,7 @@
+// eslint-disable-next-line import/no-unresolved
 import DA_SDK from 'https://da.live/nx/utils/sdk.js';
 
-(async function init() {
+(async () => {
   try {
     const { context: { repo }, token } = await DA_SDK;
     window.location.href = `./search/ms-search.html?tenant=${repo}&token=${token}`;
