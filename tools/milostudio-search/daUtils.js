@@ -3,6 +3,7 @@ import DA_SDK from 'https://da.live/nx/utils/sdk.js';
 
 (async () => {
   try {
+    // test deployment
     const { context: { repo }, token } = await DA_SDK;
     window.location.replace(`./search/ms-search.html?tenant=${repo}&token=${token}`);
   } catch (error) {
