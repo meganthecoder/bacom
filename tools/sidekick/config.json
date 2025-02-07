@@ -46,6 +46,11 @@
         "title": "FaaS Configurator",
         "description": "Deprecated.",
         "url": "https://milo.adobe.com/tools/faas"
+      },
+      {
+        "title": "Advanced Search",
+        "description": "Advanced Search with Context",
+        "url": "https://da.live/app/adobecom/da-bacom/tools/milostudio-search/search" 
       }
     ]
 }
