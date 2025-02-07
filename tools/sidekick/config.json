@@ -48,8 +48,8 @@
         "url": "https://milo.adobe.com/tools/faas"
       },
       {
-        "title": "Indexed Search",
-        "description": "Milo Studio Indexed Search with shell context",
+        "title": "Advanced Search",
+        "description": "Advanced Search with Context",
         "url": "https://da.live/app/adobecom/da-bacom/tools/milostudio-search/search" 
       }
     ]
