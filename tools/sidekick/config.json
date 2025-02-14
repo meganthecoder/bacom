@@ -50,7 +50,12 @@
       {
         "title": "Advanced Search",
         "description": "Advanced Search with Context",
-        "url": "https://da.live/app/adobecom/da-bacom/tools/milostudio-search/search" 
+        "url": "https://da.live/app/adobecom/da-bacom/tools/ms-apps/search" 
+      },
+      {
+        "title": "Bulk Operations",
+        "description": "Bulk Operations",
+        "url": "https://da.live/app/adobecom/da-bacom/tools/ms-apps/bulkops" 
       }
     ]
 }
