@@ -30,6 +30,7 @@
       "environments": ["edit"],
       "daLibrary": true,
       "experience": "dialog",
+      "dialogSize": "medium",
       "includePaths": ["DA"],
       "icon": "https://da.live/nx/public/plugins/rollout/media_195da69764de2782d555abed3042d8434a040e31c.png",
       "url": "https://da.live/nx/public/plugins/rollout.html"
@@ -45,6 +46,22 @@
         "title": "FaaS Configurator",
         "description": "Deprecated.",
         "url": "https://milo.adobe.com/tools/faas"
+      },
+      {
+        "title": "Advanced Search",
+        "description": "Advanced Search with Context",
+        "url": "https://da.live/app/adobecom/da-bacom/tools/ms-apps/search" 
+      },
+      {
+        "title": "Bulk Operations",
+        "description": "Bulk Operations",
+        "url": "https://da.live/app/adobecom/da-bacom/tools/ms-apps/bulkops" 
+      },
+      {
+        "title": "Graybox",
+        "description": "Admin tools for Milo Graybox",
+        "image": "https://publish-p133406-e1301188.adobeaemcloud.com/content/dam/milo/app-icons/graybox.jpg",
+        "url": "https://da.live/app/adobecom/milo/tools/graybox"
       }
     ]
 }
