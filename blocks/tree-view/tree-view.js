@@ -178,7 +178,7 @@ const init = async (el) => {
       topListItem.setAttribute('aria-haspopup', 'menu');
       topListItem.setAttribute('aria-expanded', false);
 
-      const label = topListItem.textContent.split('\n')?.find((t) => t.trim() !== '');
+      const label = topListItem.textContent.split('\n')?.find((t) => t.trim() !== '') || '';
       const id = label.trim().replaceAll(' ', '-');
       const button = createTag('button', { id }, label);
       const subList = topListItem.querySelector('ul');
