@@ -177,7 +177,9 @@ const loadStyle = (path) => {
 
 export function setLibs(location) {
   const { hostname, search } = location;
-  if (!['.hlx.', '.aem.', '.stage.', 'local'].some((i) => hostname.includes(i))) return '/libs';
+
+  if (!['.aem.', '.hlx.', '.stage.', 'local'].some((i) => hostname.includes(i))) return '/libs';
+
   const branch = new URLSearchParams(search).get('milolibs') || 'main';
   if (branch === 'local') return 'http://localhost:6456/libs';
   return branch.includes('--') ? `https://${branch}.aem.live/libs` : `https://${branch}--milo--adobecom.aem.live/libs`;
@@ -193,7 +195,7 @@ export const LIBS = setLibs(window.location);
   paths.forEach(loadStyle);
 }());
 
-(async function loadPage() {
+async function loadPage() {
   const { loadArea, loadLana, setConfig, createTag, getMetadata } = await import(`${LIBS}/utils/utils.js`);
   if (getMetadata('template') === '404') window.SAMPLE_PAGEVIEWS_AT_RATE = 'high';
   const metaCta = document.querySelector('meta[name="chat-cta"]');
@@ -222,4 +224,13 @@ export const LIBS = setLibs(window.location);
     });
   });
   observer.observe({ type: 'resource', buffered: true });
+}
+
+loadPage();
+
+// DA Live Preview
+(async function loadDa() {
+  if (!new URL(window.location.href).searchParams.get('dapreview')) return;
+  // eslint-disable-next-line import/no-unresolved
+  import('https://da.live/scripts/dapreview.js').then(({ default: daPreview }) => daPreview(loadPage));
 }());
