@@ -36,7 +36,7 @@
       "url": "https://da.live/nx/public/plugins/rollout.html"
     }
   ],
-    "apps": [
+  "apps": [
       {
         "title": "CaaS Configurator",
         "description": "Content as a Service.",
@@ -48,9 +48,10 @@
         "url": "https://milo.adobe.com/tools/faas"
       },
       {
-        "title": "Advanced Search",
-        "description": "Advanced Search with Context",
-        "url": "https://da.live/app/adobecom/da-bacom/tools/ms-apps/search" 
+        "title": "Search",
+        "description": "Unlocking Precision with Advanced Contextual Filters",
+        "image": "https://milostudio--milo--adobecom.aem.live/img/tools/search.jpg",
+        "url": "https://da.live/app/adobecom/da-bacom/tools/ms-apps/search"
       },
       {
         "title": "Bulk Operations",
