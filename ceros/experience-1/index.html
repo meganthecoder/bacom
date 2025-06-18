@@ -1,0 +1,284 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script
+            type="text/javascript"
+            src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+            crossorigin="anonymous"
+        >
+        </script>
+
+    <script
+        type="text/javascript"
+        src="assets/webfont-1.6.3.js"
+        integrity="sha384-kQVYcp73Z7mvY2x3q7xBfpTuS6aJIHGim/OtvzZUbwB1z0ewAfxXJkgf1187hS/j"
+        crossorigin="anonymous"
+    >
+    </script>
+
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            faviconUrl: '',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '5a0bfa1f72824a2eaef56e175f59ba24',
+            deploymentName: 'prod',
+            appVersion: 'release.8.14.64.58fc98be1ea0d8dfc979bc2dcf222154918deb1b',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'adobe',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: '2019-pilot',
+            issueAliasSlug: 'to-do-list-practice',
+            issue: {"id":"238457","project":"159925","wipExperienceVersion":"738930","publishedExperienceVersion":"742693","primaryIssueAlias":326137,"lastUnpublishedByMember":null,"slug":"experience-5d02ddcfe4e08","name":"To-Do List Practice","status":"published","creationDate":"2019-06-13T23:35:43.000Z","lastModifiedDate":"2025-06-17T17:51:31.000Z","deletionDate":null,"firstPublishedDate":"2019-06-17T23:40:37.000Z","createdByMemberId":"15127","firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/adobe\/studio-thumbnails\/page-5d08099838462.jpg","importShared":false,"lastPublishedDate":"2019-06-18T17:37:12.000Z","lastModifiedByMemberId":"62141","lastPublishedByMemberId":"15127","passwordProtected":false,"auth0UserId":null,"isTemplate":false,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"resourceId":"61bdf8da-pb02d1c702430","isSsoProtected":false,"markupId":null,"origin":null,"partner":null,"isSparkExperience":false,"sparkExperienceId":null,"title":"To-Do List Practice"},
+            docVersion: {"id":"742693","experience":"238457","committedByMember":"15127","slug":"experience-version-5d092148784ad","loadLowRes":true,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media.ceros.com\/adobe\/doc-version-json\/v11\/experience-version-5d092148784ad.js","themingBackgroundImageUri":null,"seoTitleKeywords":null,"seoMetaKeywords":null,"seoMetaDescription":null,"canonicalUrlOverride":null,"editorPagesManifest":[{"uri":"\/v1\/account\/adobe\/pages\/page-5d0921487857e","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/adobe\/page-thumbnails\/2019\/06\/18\/883f653bd4f98d5bfb75fed4bcfa7d87\/page-thumbnail.jpg?imageOpt=1&crop=510,612,x0,y0"},{"uri":"\/v1\/account\/adobe\/pages\/page-5d0921487cc5f","initiallyDisabled":false,"thumbnail":"http:\/\/media-s3-us-east-1.ceros.com\/adobe\/page-thumbnails\/2019\/06\/18\/e2d06ab5a7b6ab42302ed3d2c72cb63d\/page-thumbnail.jpg?imageOpt=1&crop=510,612,x0,y0"}],"cdeExportUrl":null,"exportAppVersion":null,"creationDate":"2019-06-18T17:37:12.000Z","modificationDate":"2019-06-18T17:37:12.000Z","publishedDate":"2019-06-18T17:37:12.000Z","unsupportedBrowserRedirectUrl":null,"ogTitle":null,"ogDescription":null,"ogImageUrl":null,"twitterTitle":null,"twitterDescription":null,"twitterImageUrl":null,"twitterHandle":null,"lazyLoading":false,"tarExportUrl":null,"pageNamesInTitle":false,"mainContentLinkText":null,"textMode":"char","zoomControlsEnabled":false,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"editableContentCount":0,"adminEditable":true,"textComponentType":"old_text","editorMode":"unset","lineHeightCompatibility":"no_baseline_offset","playerServerSideRendering":"no_player_server_side_rendering","seoMode":"experience_and_embed","layoutSettings":{"layoutPrimarySetting":null,"maxTabletWidthBreakpoint":null,"maxMobileWidthBreakpoint":null,"deviceTypeMissingVariantFallback":null},"carousel":{"enabled":false,"autoTransition":false,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":true,"swipeEnabled":true,"menuEnabled":false,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Uploaded|a22ec4af-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":729,"variantGuid":"Uploaded|a22ec4af-88b0-11e9-985c-0e55d9bc9e68","variantName":"BlackIt","cssFamilyName":"Adobe Clean-BlackIt-ZUjKQHu1","cssFileURL":"fonts\/7ac0b5f9-21d1-4d33-ac93-876b918d4714\/adobeclean-blackit.css","api":"Uploaded","woffFileURL":null},"Uploaded|a29d20e1-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a29d20e1-88b0-11e9-985c-0e55d9bc9e68","variantName":"Bold","cssFamilyName":"Adobe Clean-Bold-3ZAIWPvH","cssFileURL":"fonts\/cb6c5245-459d-47c0-a77c-a8cdf56160f4\/adobeclean-bold.css","api":"Uploaded","woffFileURL":null},"Uploaded|a2a40704-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":729,"variantGuid":"Uploaded|a2a40704-88b0-11e9-985c-0e55d9bc9e68","variantName":"Black","cssFamilyName":"Adobe Clean-Black-uckYzhKG","cssFileURL":"fonts\/1e7ab84a-6ee5-4868-9c09-bd90e4a85bd7\/adobeclean-black.css","api":"Uploaded","woffFileURL":null},"Uploaded|a3cbd88f-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a3cbd88f-88b0-11e9-985c-0e55d9bc9e68","variantName":"BoldIt","cssFamilyName":"Adobe Clean-BoldIt-14Ze6TAY","cssFileURL":"fonts\/71ffd249-ad13-435e-a77b-dbac5067cd01\/adobeclean-boldit.css","api":"Uploaded","woffFileURL":null},"Uploaded|a4435feb-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a4435feb-88b0-11e9-985c-0e55d9bc9e68","variantName":"BoldSemiCnIt","cssFamilyName":"Adobe Clean-BoldSemiCn-wO3ZqPdP","cssFileURL":"fonts\/cc64445e-9d42-4308-856a-f946eb9c6f4c\/adobeclean-boldsemicnit.css","api":"Uploaded","woffFileURL":null},"Uploaded|a47e7f72-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a47e7f72-88b0-11e9-985c-0e55d9bc9e68","variantName":"BoldSemiCn","cssFamilyName":"Adobe Clean-BoldSemiCn-vBslgRSi","cssFileURL":"fonts\/59b1c35e-701a-4e49-b7ed-69a25a6eef71\/adobeclean-boldsemicn.css","api":"Uploaded","woffFileURL":null},"Uploaded|a5518d16-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":729,"variantGuid":"Uploaded|a5518d16-88b0-11e9-985c-0e55d9bc9e68","variantName":"ExtraBold","cssFamilyName":"Adobe Clean-ExtraBold-cRrkXvNK","cssFileURL":"fonts\/850cdb9c-5acf-4258-a1bc-92808d6bd1c3\/adobeclean-extrabold.css","api":"Uploaded","woffFileURL":null},"Uploaded|a5921d08-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":729,"variantGuid":"Uploaded|a5921d08-88b0-11e9-985c-0e55d9bc9e68","variantName":"ExtraBoldIt","cssFamilyName":"Adobe Clean-ExtraBoldI-Bs7Z53hs","cssFileURL":"fonts\/05558c95-c720-4442-b0f3-308e9cdcd0b0\/adobeclean-extraboldit.css","api":"Uploaded","woffFileURL":null},"Uploaded|a5d0ea03-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a5d0ea03-88b0-11e9-985c-0e55d9bc9e68","variantName":"It","cssFamilyName":"Adobe Clean-It-QJDn3MuK","cssFileURL":"fonts\/be83580b-9a42-4b7d-b0f8-e3d16320588b\/adobeclean-it.css","api":"Uploaded","woffFileURL":null},"Uploaded|a6d4f408-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a6d4f408-88b0-11e9-985c-0e55d9bc9e68","variantName":"Light","cssFamilyName":"Adobe Clean-Light-PlUwqVeN","cssFileURL":"fonts\/48363778-628b-44e1-80b7-432e9421740a\/adobeclean-light.css","api":"Uploaded","woffFileURL":null},"Uploaded|a6dbc3fd-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a6dbc3fd-88b0-11e9-985c-0e55d9bc9e68","variantName":"LightIt","cssFamilyName":"Adobe Clean-LightIt-AT9GOjuz","cssFileURL":"fonts\/486a5cdf-08c6-44d4-b512-c2913b5beaa9\/adobeclean-lightit.css","api":"Uploaded","woffFileURL":null},"Uploaded|a7420239-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a7420239-88b0-11e9-985c-0e55d9bc9e68","variantName":"Regular","cssFamilyName":"Adobe Clean-Regular-G62JdNBq","cssFileURL":"fonts\/49e35062-3eef-45fb-9f6e-cf9fe7f4ed9b\/adobeclean-regular.css","api":"Uploaded","woffFileURL":null},"Uploaded|a818fc55-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a818fc55-88b0-11e9-985c-0e55d9bc9e68","variantName":"SemiCnIt","cssFamilyName":"Adobe Clean-SemiCnIt-eyh1Eo38","cssFileURL":"fonts\/aa2cc32d-e108-4ea9-aa29-b4d821217544\/adobeclean-semicnit.css","api":"Uploaded","woffFileURL":null},"Uploaded|a8380399-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":730,"variantGuid":"Uploaded|a8380399-88b0-11e9-985c-0e55d9bc9e68","variantName":"SemiCn","cssFamilyName":"Adobe Clean-SemiCn-MxPjOTWW","cssFileURL":"fonts\/86bdde51-6a36-4d62-869d-2fc5d1a56ef8\/adobeclean-semicn.css","api":"Uploaded","woffFileURL":null},"Uploaded|a8abc39c-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":729,"variantGuid":"Uploaded|a8abc39c-88b0-11e9-985c-0e55d9bc9e68","variantName":"SemiLight","cssFamilyName":"Adobe Clean-SemiLight-0HmMLOKs","cssFileURL":"fonts\/c632dd72-33ad-443e-bec5-605daaee5ea6\/adobeclean-semilight.css","api":"Uploaded","woffFileURL":null},"Uploaded|a9ad5176-88b0-11e9-985c-0e55d9bc9e68":{"familyName":"Adobe Clean","familyGuid":"Uploaded|a22e993d-88b0-11e9-985c-0e55d9bc9e68","fontWeight":400,"fontStyle":"normal","unitsPerEm":1000,"ascent":729,"variantGuid":"Uploaded|a9ad5176-88b0-11e9-985c-0e55d9bc9e68","variantName":"SemiLightIt","cssFamilyName":"Adobe Clean-SemiLightI-m8urBQmN","cssFileURL":"fonts\/f4908f13-0aa8-48a2-9016-ca535d03ff8a\/adobeclean-semilightit.css","api":"Uploaded","woffFileURL":null}},
+        whiteLabeling   : true,
+        isTrialAccount      : true,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : true,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#FFFFFF',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":false,"Getty Image Integration":true,"Getty Video Integration":true,"Accessibility":false,"(BETA) Protected Preview":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":true,"New Text Tool":true,"Studio API":false,"SSO Protected Experiences":false,"Studio Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":true,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":true,"(New Text Tool) Columns":true,"Open in MarkUp":true,"Create Account from Login":true,"Individual Accounts":true,"New Text Tool Experience Converter (requires New Text Tool)":true,"Studio Lite":true,"Intercom Support Chat":true,"Editor Sign Up":true,"Beamer":true,"Showcase Experience":false,"Component Library":true,"SDR Editor Invite":false,"Force Protected Experiences":false,"Request Feedback":false,"Editor Free For Import":true,"Home Screen":true,"Seismic Integration":false,"New Selection Behavior":false,"AI Features":true,"Experience Sharing":true,"Show Import Design Files":true,"Player Server Side Rendering":false,"Floating Toolbar":true,"Getty Library Integration":false,"Use Embed Modal":true,"Onboarding":true,"Use Modern IpadOS Scrolling":true,"Allow importing PDF design files":true,"Hubspot Styling":false,"Asset Library - Ceros Assets":true,"Spark Experiences in Admin":false,"Export PDF":true,"New Selection Behavior - Mouse Up":false,"New Text Data Model Change":false,"Convert Experiences to Spark":false,"Folders":false,"New Variant Layouts":false,"Use JWTs":false,"Flex in Admin UI v2":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>To-Do List Practice</title>
+
+
+
+
+
+    <meta property="og:title" content="To-Do List Practice"/>
+        <meta property="og:image" content="media/883f653bd4f98d5bfb75fed4bcfa7d87/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="To-Do List Practice">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/883f653bd4f98d5bfb75fed4bcfa7d87/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-5d092148784ad.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_adobe_document_versions_experience_version_5d092148784ad",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+
+    
+
+
+    <!-- BEGIN FAVICON -->
+    <!-- END FAVICON -->
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js"
+        integrity="sha384-rH/J/VIetVJaWayhJ86b8lksGVJhUElxg9z9Y9OolMJqV4T70NX7Sp4smPbMzv0R"
+        crossorigin="anonymous"
+    >
+    </script>
+
+    <script
+        type="text/javascript"
+        async
+        charset="UTF-8"
+        src="assets/player/applications/html5-player/bootstrap-optimized.1e76a30f1cc1db28917a3806f83aa607.js"
+        integrity=""
+        crossorigin="anonymous"
+    >
+    </script>
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="assets/player/applications/html5-player/css/html5-player.85a800d009bd0cf1f4fddbd4be769a9e.css"
+        integrity=""
+        crossorigin="anonymous"
+    />
+
+    <style>
+        body {
+            background-color: #FFFFFF;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+            <div class="page"><p class="text-component">You're on a roll with Photoshop.</p>
+<p class="text-component">Last month, you watched two videos
+and made one new project. Nice work. </p>
+<img src="media/ca156de23dc02b61da919f1e0a9f9de0/portrait-of-handsome-afro-man-using-his-mobile-image-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Get started with your own images.</p>
+<p class="text-component">We'll help you import and edit your images for the 'gram.</p>
+<p class="text-component">Experiencing technical issues with your download? Let us know.</p>
+<p class="text-component">Watch two new videos.</p>
+<p class="text-component">You're still new to Photoshop, but since you created your first
+project, you've got some chops. Two new videos for you.
+Each one is just 5 minutes long.</p>
+<p class="text-component">Try your second project.</p>
+<p class="text-component">You told us you love space. We've got a project you'll love: 
+merge your photos with this space background using layers. 
+It'll take about 30 minutes. No problems here, Houston.</p>
+<img src="media/82494de5b8c1e722dfedef0e5001c076/astronaut-in-outer-space-mixed-media-image-full.jpg" alt=""  class="image-component"/>
+<img src="media/d3faddaf0e33cdb84621ba8b14e5b409/cloud-download-on-mobile-smartphone-image-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Some nice Adobe legalese and social media links.</p>
+<img src="media/35c57efe646de77ebb71a77af0675bf2/rendition-full.png" alt=""  class="image-component"/>
+<p class="text-component">For the 'gram</p>
+<p class="text-component">Watch and learn</p>
+<p class="text-component">Ready for liftoff!</p></div>
+            <div class="page"><p class="text-component">Your subscription is collecting dust.</p>
+<p class="text-component">Creativity isn't born; it's practiced. 
+Three easy steps to get you up and running.</p>
+<p class="text-component">Download Photoshop.</p>
+<p class="text-component">Looks like you downloaded Ps last week; great!</p>
+<p class="text-component">Experiencing technical issues with your download? Let us know.</p>
+<p class="text-component">Watch two short videos.</p>
+<p class="text-component">When you told us you were new to Photoshop,
+we picked two videos to help you get started.
+Each one is just 2 minutes long.</p>
+<p class="text-component">Try your first project.</p>
+<p class="text-component">You told us you love space. We've got a project you'll love: 
+adding a moon and rocket to this space background. 
+It'll take about 20 minutes. Godspeed!</p>
+<img src="media/82494de5b8c1e722dfedef0e5001c076/astronaut-in-outer-space-mixed-media-image-full.jpg" alt=""  class="image-component"/>
+<img src="media/b8c49e63391177fc541c59ad8b8280ba/finger-pressing-play-button-on-touch-screen-image-full.jpg" alt=""  class="image-component"/>
+<img src="media/d3faddaf0e33cdb84621ba8b14e5b409/cloud-download-on-mobile-smartphone-image-full.jpg" alt=""  class="image-component"/>
+<p class="text-component">Some nice Adobe legalese and social media links.</p>
+<img src="media/35c57efe646de77ebb71a77af0675bf2/rendition-full.png" alt=""  class="image-component"/>
+<img src="media/1820dba122e609521b443665ab3c0f49/sad-boy-sits-alone-image-full.jpg" alt=""  class="image-component"/></div>
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>
